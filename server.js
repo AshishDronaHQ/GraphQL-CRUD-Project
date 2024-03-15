@@ -6,7 +6,7 @@ const typeDefs = require('./schemas/userSchema');
 const resolvers = require('./resolvers/userResolver');
 
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = 'mongodb://localhost:27017/graphql_crud';
+const MONGODB_URI = 'mongodb+srv://ashishp:R3H2r2vWB6bAP4YJ@dronahq.rkdkdhs.mongodb.net/?retryWrites=true&w=majority&appName=DronaHQ';
 
 const startServer = async () => {
   const app = express();
