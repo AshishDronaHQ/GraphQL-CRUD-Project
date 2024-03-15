@@ -11,7 +11,7 @@ const MONGODB_URI = 'mongodb+srv://ashishp:R3H2r2vWB6bAP4YJ@dronahq.rkdkdhs.mong
 const startServer = async () => {
   const app = express();
 
-  const server = new ApolloServer({ typeDefs, resolvers });
+  const server = new ApolloServer({ typeDefs, resolvers, introspection: true });
 
   await server.start();
 
